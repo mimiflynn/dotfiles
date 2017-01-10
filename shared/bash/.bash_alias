@@ -1,0 +1,15 @@
+alias profile='vim ~/.bash_profile'
+alias rehash='source ~/.bash_profile'
+
+alias show='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder'
+alias hide='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder'
+
+alias ls='ls -G'
+alias ll='ls -al'
+
+alias nodewebkit='zip -r ../${PWD##*/}.nw *'
+
+alias arctic='ssh -p 2001 mimiflynn@192.81.213.174'
+alias bike='ssh -p 2001 mimiflynn@198.199.106.72'
+alias meanie='ssh -p 2001 mimiflynn@107.170.15.176'
+alias blackmonolith='ssh -p 20001 mimiflynn@black-monolith.com'
