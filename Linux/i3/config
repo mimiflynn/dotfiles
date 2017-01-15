@@ -157,3 +157,5 @@ bar {
 }
 
 bindsym $mod+m exec rofi -show run -bg "#222222" -fg "#2ECC71" -hlbg "#445544" -hlfg "#2EEE71" -bw 4 -eh 1 -font "Roboto Slab 14" -opacity "80" -lines 8 -line-margin 4 -width 60 -padding 16 -terminal urxvtc
+
+bindsym mod4+l exec i3lock
