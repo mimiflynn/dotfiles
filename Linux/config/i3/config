@@ -156,6 +156,8 @@ bar {
         tray_output primary
 }
 
-bindsym $mod+m exec rofi -show run -bg "#222222" -fg "#2ECC71" -hlbg "#445544" -hlfg "#2EEE71" -bw 4 -eh 1 -font "Roboto Slab 14" -opacity "80" -lines 8 -line-margin 4 -width 60 -padding 16 -terminal urxvtc
+bindsym $mod+m exec rofi -show run -bg "#222222" -fg "#2ECC71" -hlbg "#445544" -hlfg "#2EEE71" -bw 4 -eh 1 -font "Roboto Slab 14" -opacity "80" -lines 8 -line-margin 4 -width 60 -padding 16 -terminal urxvt
 
-bindsym mod4+l exec i3lock
+# bindsym mod4+l exec i3lock -i /home/mimiflynn/Projects/i3/i3lock/imgs/wallpaper/ed-wallpaper.png -a /home/mimiflynn/Projects/i3/i3lock/imgs/
+# bindsym mod4+l exec i3lock -i /home/mimiflynn/Login/backgrounds/coswyn_expanse-1365x768.png -a /home/mimiflynn/Login/
+bindsym mod4+l exec i3lock -i /home/mimiflynn/Login/backgrounds/numix1366x768.png -a /home/mimiflynn/Login/
