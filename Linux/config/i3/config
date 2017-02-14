@@ -161,3 +161,10 @@ bindsym $mod+m exec rofi -show run -bg "#222222" -fg "#2ECC71" -hlbg "#445544" -
 # bindsym mod4+l exec i3lock -i /home/mimiflynn/Projects/i3/i3lock/imgs/wallpaper/ed-wallpaper.png -a /home/mimiflynn/Projects/i3/i3lock/imgs/
 # bindsym mod4+l exec i3lock -i /home/mimiflynn/Login/backgrounds/coswyn_expanse-1365x768.png -a /home/mimiflynn/Login/
 bindsym mod4+l exec i3lock -i /home/mimiflynn/Login/backgrounds/numix1366x768.png -a /home/mimiflynn/Login/
+
+#screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id "cd /sys/class/backlight/nv_backlight/; cur=$(cat brightness); cur=$((cur-20)) ; if [ $cur -lt 1 ]; then cur=5; fi; echo $cur | sudo tee brightness "
+bindsym XF86MonBrightnessUp   exec --no-startup-id "cd /sys/class/backlight/nv_backlight/; cur=$(cat brightness); cur=$((cur+20)) ; if [ $cur -gt 1023 ]; then cur=1023; fi; echo $cur | sudo tee brightness "
+
+exec –no-startup-id xfce4-power-manager
+exec --no-startup-id nitrogen

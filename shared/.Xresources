@@ -11,20 +11,17 @@ rofi.bw: 3
 !!--Urxvt------------------------------------------------------------
 
 URxvt*scrollBar: false
-URxvt.background: #2E3440
-URxvt.foreground: #FFFFFF
-URxvt*font: xft:Inconsolata:pixelsize=12:antialias=true
+URxvt.foreground: #DDDDDD
+URxvt*font: xft:Hack:pixelsize=12:antialias=true
 URxvt*cursorUnderline: true
 
-! Clipboar2
-URxvt.keysym.M-c: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c800
 
 
 !!--Xterm------------------------------------------------------------
 ! Use a nice truetype font and size by default... 
-! xterm*faceName: DejaVu Sans Mono Book
+! xterm*faceName: Hack
 ! xterm*faceSize: 11
 
 ! Every shell is a login shell by default (for inclusion of all necessary environment variables)
