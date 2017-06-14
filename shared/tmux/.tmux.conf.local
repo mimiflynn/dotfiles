@@ -246,6 +246,7 @@ tmux_conf_theme_clock_style='24'
 # Mimi's settings
 
 set -g mouse on
+set -g mouse-select-pane on
 
 # split panes using | and _
 bind _ split-window
