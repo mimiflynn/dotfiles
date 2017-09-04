@@ -13,8 +13,6 @@ alias hide='defaults write com.apple.finder AppleShowAllFiles FALSE && killall F
 alias ls='ls -G'
 alias ll='ls -al'
 
-alias nodewebkit='zip -r ../${PWD##*/}.nw *'
-
 # Path ------------------------------------------------------------
 if [ -f ~/.bash_path ]; then
   source ~/.bash_path
@@ -34,3 +32,4 @@ fi
 if [ -f ~/.bash_alias ]; then
     source ~/.bash_alias
 fi
+
