@@ -38,22 +38,22 @@ font Geogly:size=9
 
 TEXT
 ${color0}Core1:$color ${cpu cpu1}%$alignr${exec sensors | grep 'Core 0' | cut -c16-22 | sed '/^$/d'}
-${color0}${cpugraph cpu1 32,210 FF5500 FF5500}
+${color0}${cpugraph cpu1 32,210 E75E4F E75E4F}
 ${color0}Core2:$color ${cpu cpu2}%$alignr${exec sensors | grep 'Core 1' | cut -c16-22 | sed '/^$/d'}
-${color0}${cpugraph cpu2 32,210 FF5500 FF5500}
+${color0}${cpugraph cpu2 32,210 E75E4F E75E4F}
 ${color0}Core3:$color ${cpu cpu3}%$alignr${exec sensors | grep 'Core 2' | cut -c16-22 | sed '/^$/d'}
-${color0}${cpugraph cpu1 32,210 FF5500 FF5500}
+${color0}${cpugraph cpu1 32,210 E75E4F E75E4F}
 ${color0}Core4:$color ${cpu cpu4}%$alignr${exec sensors | grep 'Core 3' | cut -c16-22 | sed '/^$/d'}
-${color0}${cpugraph cpu2 32,210 FF5500 FF5500}
+${color0}${cpugraph cpu2 32,210 E75E4F E75E4F}
 
 ${color0}RAM: $color$memperc%$alignr$mem${color0}/${color}$memmax
 ${color0}$membar
 
-${color0}Down: $color${downspeed wlp2s0}$alignr${totaldown wlp2s0}
-${color0}${downspeedgraph wlp4s0 32,210 0077ff 0077ff}
+${color0}Down: $color${downspeed wlp4s0}$alignr${totaldown wlp4s0}
+${color0}${downspeedgraph wlp4s0 32,210 2C70B7 2C70B7}
 
-${color0}Up:   $color${upspeed wlp2s0}$alignr${totalup wlp2s0}
-${color0}${upspeedgraph wlp4s0 32,210 0077FF 0077ff}
+${color0}Up:   $color${upspeed wlp4s0}$alignr${totalup wlp4s0}
+${color0}${upspeedgraph wlp4s0 32,210 2C70B7 2C70B7}
 
 ${color0}root$alignr$color${fs_used /}${color0}/$color${fs_size /}
 ${color0}${fs_bar 5,210 /}
@@ -65,7 +65,7 @@ ${color0}swap$alignr$color${swap}${color0}/$color${swapmax}
 ${color0}${swapbar 5,210}
 
 ${color0}Read: $color${diskio_read}$alignr${color0}Write: $color${diskio_write}
-${color0}${diskiograph /dev/sda 32,210 7700FF 7700ff}
+${color0}${diskiograph /dev/sda 32,210 5FAC6D 5FAC6D}
 
 ${color0}Top:${alignr}CPU
 $color${top name 1}$alignr${top cpu 1}
