@@ -1,4 +1,4 @@
-alignment bottom_right
+alignment top_right
 background yes
 border_width 1
 cpu_avg_samples 4
@@ -24,9 +24,7 @@ out_to_console no
 wm_class_name Conky
 own_window_colour black
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
-own_window_transparent no
-own_window_argb_visual yes
-own_window_argb_value 75
+own_window_transparent yes
 own_window_type normal
 own_window yes
 override_utf8_locale yes
@@ -36,12 +34,9 @@ uppercase no
 use_spacer yes
 use_xft yes
 xftalpha 0.8
-font Hack:size=9
+font Geogly:size=9
 
 TEXT
-${color0}Battery:$color ${battery_percent BAT0}%
-${color0}${battery_bar 5,210 BAT0}
-
 ${color0}Core1:$color ${cpu cpu1}%$alignr${exec sensors | grep 'Core 0' | cut -c16-22 | sed '/^$/d'}
 ${color0}${cpugraph cpu1 32,210 E75E4F E75E4F}
 ${color0}Core2:$color ${cpu cpu2}%$alignr${exec sensors | grep 'Core 1' | cut -c16-22 | sed '/^$/d'}
@@ -78,7 +73,6 @@ $color${top name 2}$alignr${top cpu 2}
 $color${top name 3}$alignr${top cpu 3}
 $color${top name 4}$alignr${top cpu 4}
 $color${top name 5}$alignr${top cpu 5}
-
 ${color0}${alignr}MEM
 $color${top_mem name 1}$alignr${top_mem mem_res 1}
 $color${top_mem name 2}$alignr${top_mem mem_res 2}

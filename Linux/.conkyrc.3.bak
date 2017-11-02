@@ -1,0 +1,94 @@
+conky.config = {
+  -- -- Conky settings -- #
+	    background = false,
+	    update_interval = 1,
+
+	    cpu_avg_samples = 1,
+	    net_avg_samples = 2,
+
+	    override_utf8_locale = true,
+
+	    double_buffer = true,
+	    no_buffers = true,
+
+      text_buffer_size = 32768,
+      imlib_cache_size = 0,
+
+  -- -- Window specifications -- #
+	    own_window = true,
+	    own_window_type = 'dock',
+      	own_window_transparent = false,
+      	own_window_argb_visual = true,
+		own_window_argb_value = 0,
+      	own_window_colour = '000000',
+	  	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+      	own_window_title = 'clicky',
+
+	    border_inner_margin = 50,
+	    border_outer_margin = 0,
+
+	-- Conky on second monitor
+	    xinerama_head = 2,
+
+
+  --minimum_size 1100 700
+	    maximum_width = 700,
+
+	    alignment = 'top_right',
+	    gap_x = 0,
+	    gap_y = 90,
+
+  -- -- Graphics settings -- #
+	    draw_shades = false,
+	    draw_outline = false,
+	    draw_borders = false,
+	    draw_graph_borders = false,
+
+  -- -- Text settings -- #
+	    use_xft = true,
+	    font = 'Ubuntu Mono:size=10',
+	    xftalpha = 0.8,
+      --Ícones: ${font Conky Icons by Carelli:size=14}
+
+	    uppercase = false,
+
+	    default_color = '#FFFFFF',
+
+      --own_window_transparent yes
+	    own_window_colour = '#000000',
+	    minimum_width = 400, minimum_height = 700,
+
+      --CORRECT THIS PATH
+      lua_load = '~/Conky-Minimalism-master/clocks.lua',
+      lua_draw_hook_pre = 'clock_rings'
+};
+
+conky.text = [[
+
+  ${voffset -25}${offset 180}${font neuropol:size=20}${time %H:%M}${font}  ${font Nimbus Mono L:size=9}$uptime
+  ${voffset 14}${offset 178}${color #ffffff}${font Roboto-Italic:size=12}${exec date +%d\ %B\ %Y | sed 's/^.\| [a-z]/\U&/g'}
+  ##Replace 'wlp3s0' with name of your network interface
+  ${offset 30}${voffset 70}${color #FFFFFF}${font Roboto-Medium:size=17}Dw  ${downspeedgraph wlp3s0 26,80 FFFFFF FFFFFF}
+  ${offset 95}${voffset -10}${font Roboto-Regular:size=8}${downspeed wlp3s0}
+  ##Replace 'wlp3s0' with name of your network interface
+  ${offset 35}${voffset 0}${color #FFFFFF}${font Roboto-Medium:size=17}Up ${upspeedgraph wlp3s0 26,80 FFFFFF FFFFFF}
+  ${offset 95}${voffset -10}${font Roboto-Regular:size=8}${upspeed wlp3s0}
+  ##Replace 'wlp3s0' with name of your network interface
+  ${offset 35}${voffset 10}${font Roboto-Regular:size=12}${color #FFFFFF}TDown   ${color #ffffff}${totaldown wlp3s0}
+  ${offset 60}${voffset 125}${font Roboto-Regular:size=15}${color #FFFFFF}CPU
+  ${offset 260}${voffset 10}${font Roboto-Regular:size=8}CPU Temp
+  #I have /home in a different partition, but maybe is not your case
+  ${offset 30}${voffset 70}${color #FFFFFF}${font Roboto-Medium:size=14}Home  ${font Roboto-Regular:size=11}${fs_used /home} / ${fs_size /home}
+  ${offset 30}${color #FFFFFF}${font Roboto-Medium:size=14}Root  ${font Roboto-Regular:size=11}${fs_used /} / ${fs_size /}
+  ${offset 30}${color #FFFFFF}${font Roboto-Medium:size=14}RAM  ${font Roboto-Regular:size=11}$mem / $memmax
+  #You can remove it if you don't have swap partition
+  ${offset 30}${color #FFFFFF}${font Roboto-Medium:size=14}Swap  ${font Roboto-Regular:size=11}$swap / $swapmax
+  ${offset 30}${voffset 100}${font Roboto-Medium:size=14}Weather
+  #Change Panama to your country and lang as en.png, it.png etc...
+  ${texeci 1800 curl --output wttr.png "wttr.in/newyork_0pq_lang=en.png"}
+  ${offset 205}${voffset -160}${color #ffffff}${font Roboto-Bold:size=14}MEM
+  ##CORRECT THIS PATH
+  ${image ~/Conky-Minimalism-master/manjaro.png -p 250,120 -s 120x125}
+  ${image ./wttr.png -p 80,730 -s 266x140}
+
+]];
