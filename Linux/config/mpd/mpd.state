@@ -1,0 +1,28 @@
+sw_volume: 100
+audio_device_state:1:pulse audio
+audio_device_state:1:mpd_fifo
+state: play
+current: 0
+time: 116.773000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:AndrewBird/abird2005-05-01t01.flac
+1:AndrewBird/abird2005-05-01t02.flac
+2:AndrewBird/abird2005-05-01t03.flac
+3:AndrewBird/abird2005-05-01t04.flac
+4:AndrewBird/abird2005-05-01t05.flac
+5:AndrewBird/abird2005-05-01t06.flac
+6:AndrewBird/abird2005-05-01t07.flac
+7:AndrewBird/abird2005-05-01t08.flac
+8:AndrewBird/abird2005-05-01t09.flac
+9:AndrewBird/abird2005-05-01t10.flac
+10:AndrewBird/abird2005-05-01t11.flac
+11:AndrewBird/abird2005-05-01t12.flac
+12:AndrewBird/abird2005-05-01t13.flac
+playlist_end
