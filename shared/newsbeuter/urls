@@ -1,12 +1,19 @@
-https://news.ycombinator.com/rss
-https://reddit.com/r/linux/.rss
-http://tragedyofcommons.wordpress.com/rss
-https://hackaday.com/rss
-https://greatscottgadgets.com/feed.xml
-https://krebsonsecurity.com/rss
+https://news.ycombinator.com/rss "~Hacker News"
+https://reddit.com/r/linux/.rss "~r/linux"
+http://tragedyofcommons.wordpress.com/rss "~Tragedy of Commons"
+https://hackaday.com/rss "~Hackaday"
+https://greatscottgadgets.com/feed.xml "~Great Scott Gadgets"
+https://krebsonsecurity.com/rss "~Krebs on Security"
 http://jvns.ca/atom.xml
-https://thehackerblog.com/feed/index.html
-http://dangerousprototypes.com/blog/feed/
-https://blog.adafruit.com/rss
-https://highon.coffee/feed
-https://www.stilldrinking.org/rss/feed.xml
+https://thehackerblog.com/feed/index.html "~The Hacker Blog"
+http://dangerousprototypes.com/blog/feed/ "~Dangerous Prototypes Blog"
+https://blog.adafruit.com/rss "~Adafruit"
+https://highon.coffee/feed "~High on Coffee"
+https://www.stilldrinking.org/rss/feed.xml "~Still Drinking"
+http://bldgblog.com/feed/ "~BLDG Blog"
+http://blog.dustinkirkland.com/feeds/posts/default/-/ecryptfs "~ecryptfs"
+
+
+https://www.wired.com/category/security/feed "~WIRED Security News"
+
+https://www.datacamp.com/community/rss.xml "~DataCamp"
