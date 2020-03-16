@@ -18,11 +18,6 @@ if [ -f ~/.bash_path ]; then
   source ~/.bash_path
 fi
 
-# Load in .bashrc
-if [ -f ~/.bashrc ]; then
-  source ~/.bashrc
-fi
-
 # Load prompt
 if [ -f ~/.bash_prompt ]; then
     source ~/.bash_prompt
