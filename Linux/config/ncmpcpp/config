@@ -2,10 +2,9 @@ ncmpcpp_directory = ~/.config/ncmpcpp
 lyrics_directory = ~/Music
 mpd_music_dir = ~/Music
 
-visualizer_fifo_path = /tmp/mpd.fifo
+visualizer_fifo_path = ~/.local/share/mpd/mpd.fifo
 visualizer_output_name = "mpd_fifo"
 visualizer_in_stereo = yes
-visualizer_sample_multiplier = 2
 visualizer_sync_interval = 30
 
 playlist_disable_highlight_delay = 3
@@ -33,10 +32,12 @@ browser_sort_format = {{%a} {%y} {%b} {%n}|{%t}}|{%f}
 
 #song_columns_list_format = "(25)[red]{a}  (55)[white]{t} (5)[blue]{b}"
 #song_columns_list_format = (6f)[]{lr: } (25)[]{a} (3f)[]{nE: } (40)[]{t|f:Title} (5f)[]{yE: } (35)[]{b}
-song_columns_list_format = (6f)[blue]{lr: } (25)[white]{a} (25)[yellow]{b} (55)[red]{t|f:Title}
+#song_columns_list_format = (6f)[blue]{lr: } (25)[white]{a} (25)[yellow]{b} (55)[red]{t|f:Title}
 
-now_playing_prefix = "$(138)>" 
-now_playing_suffix = $(end)
+song_columns_list_format = (45)[5]{t|f:Title} (25)[6]{a} (25)[7]{b} (6f)[yellow]{lr: }
+
+now_playing_prefix = "$(205)> " 
+now_playing_suffix = "$(205) <"
 
 playlist_shorten_total_times = yes
 playlist_show_remaining_time = yes
@@ -51,7 +52,7 @@ centered_cursor = yes
 
 #progressbar_look = "․⨪ "
 #progressbar_look = "oA "
-progressbar_boldness= no
+#progressbar_elapsed_color = 
 
 default_place_to_search_in = database
 
@@ -65,7 +66,7 @@ header_text_scrolling = yes
 cyclic_scrolling = no
 lines_scrolled = 1
 
-follow_now_playing_lyrics = yes
+follow_now_playing_lyrics = no
 fetch_lyrics_for_current_song_in_background = no
 store_lyrics_in_song_dir = yes
 
@@ -107,26 +108,26 @@ colors_enabled = yes
 # prefs
 header_visibility = yes
 statusbar_visibility = "yes"
-progressbar_look = "━■"
+#progressbar_look = "━■"
 #progressbar_look = "━╋━"
+progressbar_look = "-╋━"
 titles_visibility = "yes"
 discard_colors_if_item_is_selected = "yes"
 
 # colors
-active_column_color = red
-alternative_ui_separator_color = red
-color1 = red
-color2 = blue
+alternative_ui_separator_color = 6
+color1 = 6
+color2 = 7
 empty_tag_color = red
 header_window_color = 4
-main_window_color = red
-main_window_highlight_color = 4
-progressbar_color = red
-progressbar_elapsed_color = 4
+main_window_color = 205
+current_item_inactive column_prefix = "$(5)$r"
+current_item_inactive column_suffix = "$/r$(end)"
+progressbar_color = 7
+progressbar_elapsed_color = 5
 state_flags_color = red
-state_line_color = red
-statusbar_color = red
+state_line_color = 3
+statusbar_color = 6
 #statusbar_color = 240
-visualizer_color = red
+visualizer_color = 7
 volume_color = 13
-
