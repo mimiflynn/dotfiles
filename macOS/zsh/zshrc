@@ -1,4 +1,4 @@
 alias ls='ls -G'
 alias ll='ls -al'
 
-PROMPT='%(?.%F{green}√.%F{red}?%?)%f %F{blue}%~%f %# '
+PROMPT='%(?.%F{green}√.%F{red}?%?)%f %F{purple}%~%f %F{blue}%# '
